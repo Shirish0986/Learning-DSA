@@ -1,1 +1,2 @@
-# This is For Learning DSA in JAVA
+# Learning Data Structures and Algorithms in Java
+Welcome to the Learning DSA in Java repository! This repository is designed to help you learn and practice Data Structures and Algorithms (DSA) using the Java programming language. Whether you're preparing for coding interviews, enhancing your problem-solving skills, or just curious about algorithms, this repo is a great place to start.
