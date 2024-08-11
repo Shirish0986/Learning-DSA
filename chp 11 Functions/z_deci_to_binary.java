@@ -14,7 +14,6 @@ public class z_deci_to_binary {
     }
 
     public static void main(String[] args) {
-
         deciTobin(9);
 
     }
