@@ -12,7 +12,7 @@ public class v_largestNumInArray1 {
     public static void main(String[] args) {
         int num[]={2,4,6,81,10,12};
         int largest=largestInterger(num);
-        System.out.println(largest);
+        System.out.println("Largest number in the array : "+ largest);
 
     }
 }
