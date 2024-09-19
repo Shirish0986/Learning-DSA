@@ -28,3 +28,13 @@ public class ix_binarySearch1 {
         System.out.println(index);
     }
 }
+// ======================================== Time Complexity=============================
+/*
+     basicall how we calculATE TIME complexity
+     we see how many iteration is done ..har loop mei humne aapne array ke andar kitane baar search kiya
+     
+     iteration when we were in 1st iteration : tab hamare array ka size was n
+     iteration when we were in 2nd iteration : tab hamare array ka size was n/2
+     iteration when we were in 3rd iteration : tab hamare array ka size was n/4 
+                                                                        till 1 = n/2^k ; k=(log n) [t.c]   
+ */
