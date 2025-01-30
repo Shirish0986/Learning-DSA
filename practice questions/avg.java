@@ -1,4 +1,3 @@
-
 public class avg {
     
     public static void avge(int arr[]){
