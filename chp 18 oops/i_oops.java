@@ -4,8 +4,10 @@ public class i_oops {
         p1.Setcolor("blue");
         System.out.println(p1.Getcolor());
         p1.Setcolor("yellow");
-        System.out.println(p1.color);
+        System.out.println(p1.Getcolor());
         Bankacc myacc = new Bankacc();
+        p1.SetTip(5);
+        System.out.println(p1.GetTip());
         myacc.username = "shirish0986";
         System.out.println(myacc.username);
         // myacc.setpassword("shirish0986");
@@ -21,12 +23,16 @@ class Pen {
     String Getcolor(){
         return this.color;
     }
+
+    int GetTip(){
+        return this.tipsize;
+    }
     void Setcolor(String color) {
         this.color = color;
     }
 
-    void ChangeTip(int newtipsize) {
-        tipsize = newtipsize;
+    void SetTip(int tipsize) {
+        this.tipsize = tipsize;
     }
 }
 
