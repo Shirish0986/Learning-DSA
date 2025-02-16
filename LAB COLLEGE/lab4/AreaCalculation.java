@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+public class AreaCalculation {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter length of the rectangle: ");
+        double length = scanner.nextDouble();
+        System.out.print("Enter breadth of the rectangle: ");
+        double breadth = scanner.nextDouble();
+
+        Rectangle rectangle = new Rectangle(length, breadth);
+        System.out.println("Area of Rectangle: " + rectangle.calculateArea());
+
+        System.out.print("Enter base of the triangle: ");
+        double base = scanner.nextDouble();
+        System.out.print("Enter height of the triangle: ");
+        double height = scanner.nextDouble();
+        Triangle triangle = new Triangle(base, height);
+        System.out.println("Area of Triangle: " + triangle.calculateArea());
+
+        scanner.close();
+    }
+}
+
+abstract class Shape {
+
+    abstract double calculateArea();
+}
+
+class Rectangle extends Shape {
+    private double length, breadth;
+
+    public Rectangle(double length, double breadth) {
+        this.length = length;
+        this.breadth = breadth;
+    }
+
+    @Override
+    double calculateArea() {
+        return length * breadth;
+    }
+}
+
+class Triangle extends Shape {
+    private double base, height;
+
+    public Triangle(double base, double height) {
+        this.base = base;
+        this.height = height;
+    }
+
+    @Override
+    double calculateArea() {
+        return 0.5 * base * height;
+    }
+}
+
